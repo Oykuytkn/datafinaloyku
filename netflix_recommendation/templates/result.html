@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation</title>
+</head>
+<body>
+    <h1>Movie Recommendation</h1>
+
+    <h2>Recommendations:</h2>
+    <ul id="recommendation-list">
+        {% for movie in recommendations %}
+            <li>{{ movie }}</li>
+        {% endfor %}
+    </ul>
+
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+
+</body>
+</html>
